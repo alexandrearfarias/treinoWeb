@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midia dinâmica</title>
+</head>
+<body>
+    <h1>Testando mídias</h1>
+    <p>Testando a imagem agora</p>
+    <picture>
+        <source media="(max-width:750px )" srcset="arquivos/foto-p.jpg" type="image/jpg">
+        <source media="(max-width:1050px )" srcset="arquivos/foto-m.jpg" type="image/jpg">
+        <img src="arquivos/foto-g.jpg" alt="imagem padrão">
+    </picture>
+    <p>Testando agora os audios</p>
+    <audio preload="metdatata" controls>
+        <source src="arquivos/happy-mistake.mp3" type="audio/mpeg">
+        <p>seu navegador não conseguiu carregar o audio <a href="arquivos/happy-mistake.mp3" download="happy-mistake.mp3" type="audio/mpeg"></a></p>
+    </audio>
+    <p>Por ultimo testando o video</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+</body>
+</html>
