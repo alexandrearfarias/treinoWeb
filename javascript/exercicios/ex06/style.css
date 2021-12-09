@@ -1,0 +1,14 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: rgb(162, 236, 212);
+}
+#botoes{
+    display: inline-block;
+}
+button{
+    padding: 15px;
+    border-radius: 3px;
+    border-style: groove;
+    background-color: antiquewhite;
+}

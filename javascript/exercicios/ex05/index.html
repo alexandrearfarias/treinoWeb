@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando numeros</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 13pt;
+            text-align: center;
+        }
+        button{ padding: 15px;}
+    </style>
+</head>
+<body>
+    <h1>Média aritimetica</h1>
+    <button onclick="calcular()">Calcular media</button>
+    <section id="resultado">
+        <p>Aqui vai aparecer o resultado...</p>
+    </section>
+
+    <script>
+        function calcular(){
+            let nome = window.prompt(`Qual o seu nome`)
+            let n1 = Number(window.prompt(`Qual a sua primeira nota?`))
+            let n2 = Number(window.prompt(`Qual a sua segunda nota?`))
+
+            let res = document.getElementById('resultado')
+            res.innerHTML = `<p> O Aluno ${nome} </p>`
+            res.innerHTML += `<p> com as notas ${n1} e ${n2}`
+            res.innerHTML += `<p> possui média ${(n1+n2)/2}`
+        }
+    </script>
+</body>
+</html>
