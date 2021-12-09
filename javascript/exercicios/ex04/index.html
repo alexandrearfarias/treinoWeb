@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4º exercicio</title>
+    <style>
+        body{ font: 14pt Arial;}
+        button{padding:15px; border-radius: 4px;}
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com dados</h1>
+    <button onclick="inicio()"> Clique aqui para começar</button>
+
+    <section id="resultado">
+        <p>Aqui vão ser mostrados os resultados...</p>
+    </section>
+
+    <script>
+        function inicio(){
+            let nome = window.prompt(`Qual o seu nome?`)
+            let res = window.document.getElementById('resultado')
+            res.innerHTML = `<p> Ola <strong>${nome}</strong>, Seja bem vindo ao site! &#x1F596 </P>`
+        }
+    </script>
+</body>
+</html>
